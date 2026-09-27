@@ -1,0 +1,37 @@
+title: Portafolio
+description: Repositorio base para enseñar y crear documentación en GitHub Pages con Just the Docs
+
+# GitHub Pages: modo recomendado
+remote_theme: just-the-docs/just-the-docs
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+
+url: "https://LeoGonYama39.github.io/"
+baseurl: "/JustTheDocs_Robotica"
+
+#Configuracion Formato, Header y Footer
+just_the_docs:
+  # incluir CSS adicional
+  custom_css:
+    - "assets/css/custom.css"
+  footer_content: ""
+
+search_enabled: true
+search:
+  # Cambia el numero dependiendo el numero de subniveles de páginas, poner 1 por default
+  heading_level: 2
+
+# Ejemplo de enlace auxiliar (aparece arriba a la derecha)
+aux_links:
+  "Repositorio del proyecto (GitHub) ":
+    - "https://github.com/LeoGonYama39/codigos-proyecto-robotica/tree/main"
+
+# Enlaces
+permalink: pretty
+
+exclude:
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "node_modules"
+  - "vendor"
