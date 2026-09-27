@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Cinemática inversa
+title: Cinemática inversa diferencial
 nav_order: 4
 ---
 
