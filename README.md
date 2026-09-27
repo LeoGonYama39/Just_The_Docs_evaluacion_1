@@ -1,3 +1,9 @@
+---
+layout: default
+title: README
+nav_exclude: true
+---
+
 # Plantilla Just the Docs
 
 Esta es una **plantilla de documentación** basada en **Just the Docs** (Jekyll) para que tus alumnos puedan:
