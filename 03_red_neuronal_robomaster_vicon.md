@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Red neuronal RoboMaster $\rightarrow$ Vicon
+title: Red neuronal RoboMaster -> Vicon
 nav_order: 3
 ---
 
@@ -29,6 +29,7 @@ El aumento del error de 4.17 cm en entrenamiento a 7.15 cm en la partición de p
 ## Del modelo normalizado al jacobiano físico
 Internamente la red aprende `ŷ = ((x - μ_x) / σ_x) * W + b` sobre variables normalizadas; el sistema la reexpresa en unidades físicas como:
 
-> **ŷ = A · x + b_fis**, donde **A = (W_1: · σ_y) / σ_x**
+
+![Imagen ecuación 1](assets/img/red_robom_vicon/red_robom_vicon_eq1.jpg)
 
 conservando las 12 entradas y las 6 salidas. El bloque de posición del jacobiano, `J = (A_[1:2, 1:2])ᵀ`, resultó bien condicionado (número de condición 1.07, con umbral de rechazo en 20), lo que descarta que la inversión diferencial en sí misma sea una fuente relevante de amplificación numérica del error.
