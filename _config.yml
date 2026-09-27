@@ -1,5 +1,5 @@
-title: Portafolio
-description: Repositorio base para enseñar y crear documentación en GitHub Pages con Just the Docs
+title: Just_The_Docs_evaluacion_1
+description: Just The Docs para documentar la evaluación 1 de Control Inteligente, otoño 2026.
 
 # GitHub Pages: modo recomendado
 remote_theme: just-the-docs/just-the-docs
@@ -8,7 +8,7 @@ plugins:
   - jekyll-seo-tag
 
 url: "https://LeoGonYama39.github.io/"
-baseurl: "/JustTheDocs_Robotica"
+baseurl: "/Just_The_Docs_evaluacion_1"
 
 #Configuracion Formato, Header y Footer
 just_the_docs:
@@ -25,7 +25,7 @@ search:
 # Ejemplo de enlace auxiliar (aparece arriba a la derecha)
 aux_links:
   "Repositorio del proyecto (GitHub) ":
-    - "https://github.com/LeoGonYama39/codigos-proyecto-robotica/tree/main"
+    - "https://github.com/jbbarragan/RoboMaster_Vicon_Python"
 
 # Enlaces
 permalink: pretty
