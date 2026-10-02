@@ -45,6 +45,13 @@ Estas tres fuentes son consistentes con el patrón observado: las figuras con es
 ## Discusión por figura
 La figura en ocho, señalada como una de las más relevantes de esta evaluación, exhibe un error medio de 2.09 cm y RMS de 2.68 cm, notablemente menor que el del cuadrado y comparable al de los círculos, pese a combinar dos lóbulos de curvatura opuesta y un cruce central donde la dirección de avance se invierte. Esto indica que el controlador maneja razonablemente bien los cambios de curvatura continuos —incluida la inversión de sentido de giro en el cruce, visible como el pico de 7.54 cm (el mayor de la figura) cercano al 58 % del recorrido— siempre que no se le exija además detenerse por completo, como sí ocurre en las esquinas de 45° o más del cuadrado y el zigzag. El círculo pequeño (0.2 m de radio) presenta un error medio similar al del círculo grande a pesar de que su tamaño es cinco veces menor, lo que en términos relativos representa un error proporcionalmente mayor respecto al tamaño de la figura, y es consistente con que a menor radio la curvatura requerida es mayor y el margen entre la velocidad de referencia y el límite de aceleración de comando (1.2 m/s²) se reduce.
 
+## Demostraciones de trayectorias
+
+<video controls width="720">
+  <source src="{{ '/assets/videos/ocho.mp4' }}" type="video/mp4">
+  Tu navegador no soporta video HTML5.
+</video>
+
 # Conclusiones
 Se documentó y validó experimentalmente un esquema de seguimiento de trayectorias para el DJI RoboMaster S1 que reemplaza la medición óptica en línea por la inversión diferencial del jacobiano de una red neuronal lineal 12 -> 6 entrenada fuera de línea para estimar la pose Vicon a partir de telemetría interna. La validación independiente con el propio sistema Vicon, sobre cinco figuras geométricas de tamaño nominal conocido, muestra errores de seguimiento medios de entre 1.4 y 7.3 cm y máximos de hasta 17.8 cm, con el cuadrado como la figura más exigente por la combinación de esquinas de 90° y detenciones de la referencia, y el ocho y los círculos como las figuras con mejor desempeño relativo. 
 
