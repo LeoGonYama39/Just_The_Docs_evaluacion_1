@@ -47,10 +47,10 @@ La figura en ocho, señalada como una de las más relevantes de esta evaluación
 
 ## Demostraciones de trayectorias
 
-<video controls width="720">
-  <source src="{{ '/assets/videos/ocho.mp4' }}" type="video/mp4">
-  Tu navegador no soporta video HTML5.
-</video>
+<iframe width="315" height="560" src="https://www.youtube.com/shorts/LVHBAPQjq2E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+</iframe>
+
+> Trayectoria ocho
 
 # Conclusiones
 Se documentó y validó experimentalmente un esquema de seguimiento de trayectorias para el DJI RoboMaster S1 que reemplaza la medición óptica en línea por la inversión diferencial del jacobiano de una red neuronal lineal 12 -> 6 entrenada fuera de línea para estimar la pose Vicon a partir de telemetría interna. La validación independiente con el propio sistema Vicon, sobre cinco figuras geométricas de tamaño nominal conocido, muestra errores de seguimiento medios de entre 1.4 y 7.3 cm y máximos de hasta 17.8 cm, con el cuadrado como la figura más exigente por la combinación de esquinas de 90° y detenciones de la referencia, y el ocho y los círculos como las figuras con mejor desempeño relativo. 
